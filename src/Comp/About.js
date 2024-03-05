@@ -1,8 +1,8 @@
 function About(){
     return(
-        <div className="About">
-            <h1>This is About</h1>
-        </div>
+        <section className="About">
+            <h1>소개자리</h1>
+        </section>
     )
 }
 

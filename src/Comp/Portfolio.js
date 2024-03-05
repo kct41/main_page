@@ -1,8 +1,8 @@
 function Portfolio(){
     return(
-        <div className="Portfolio">
-            <h1>This is Portfolio</h1>
-        </div>
+        <section className="Portfolio">
+            <h1>포폴자리</h1>
+        </section>
     )
 }
 

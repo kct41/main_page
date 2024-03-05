@@ -11,7 +11,7 @@ function Nav() {
     }
 
     return (
-        <div className="Nav">
+        <nav className="Nav">
             <ul>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/about">ABOUT ME</Link></li>
@@ -21,7 +21,7 @@ function Nav() {
                     <FontAwesomeIcon className="icon" icon={faSun}/>
                 </li>
             </ul>
-        </div>
+        </nav>
     )
 }
 
