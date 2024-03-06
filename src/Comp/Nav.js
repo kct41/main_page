@@ -13,7 +13,7 @@ function Nav() {
     return (
         <nav className="Nav">
             <ul>
-                <li><Link to="/main_page">HOME</Link></li>
+                <li><Link to="/">HOME</Link></li>
                 <li><Link to="/about">ABOUT ME</Link></li>
                 <li><Link to="/portfolio">PORTFOLIO</Link></li>
                 <li className="dayNight" onClick={night}>
