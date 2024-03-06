@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;600;700&display=swap');
 
 *{padding:0;margin:0;list-style:none;box-sizing:border-box;}
-body{font-family:'Noto Sans KR', sans-serif;letter-spacing:-1px;font-size:16px;}
+html{font-size:16px;}
+body{font-family:'Noto Sans KR', sans-serif;letter-spacing:-1px;}
 a{color:inherit;text-decoration:none;}
 
 /**  App  **/
@@ -30,7 +31,7 @@ nav ul .dayNight .icon:nth-child(2){display:none;}
 
 
 /*  콘텐츠 크기조절  */
-section{display:flex;align-items:center;justify-content:center;max-width:1000px;height:calc(100vh - 80px);margin:0 auto;}
+section{border:1px solid blue;display:flex;align-items:center;justify-content:center;max-width:1000px;height:calc(100vh - 80px);margin:0 auto;}
 
 /*컨텐츠 화면 정가운데로 보내는*/
 .container{border:1px solid red;display:flex;justify-content:space-between;align-items:center;width:100%;}
@@ -66,21 +67,23 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
 
 /*  responsive  */
 @media(max-width:1024px){
-    body{font-size:14px;}
+    html{font-size:14px;}
     nav{height:60px;}
+    nav ul li > a{font-size:1rem;}
     section{max-width:83vw;height:calc(100vh - 60px);}
-    .container > div > .text_box{line-height:6.5vw;font-size:6vw;}
+    .Home > .container > div > .text_box{line-height:6.5vw;font-size:6vw;}
     .About > .container > .info_box > .skill_box > .box > .circle{position:relative;width:78px;height:78px;}
 }
 
 @media(max-width:768px){
-    body{font-size:15px;}
+    html{font-size:15px;}
     nav{height:60px;justify-content:center;}
     nav > ul{justify-content:center;}
     nav > ul > li:first-child{margin-left:0;}
     section{max-width:56vw;}
     .container{flex-direction:column;}
-    .container > div > .text_box{line-height:9vw;font-size:8.5vw;margin-top:30px;}
+    .Home > .container > div{width:100%;}
+    .Home > .container > div > .text_box{line-height:9vw;font-size:8.5vw;margin-top:30px;}
     .About > .container > .img_box{width:100%;height:35vh;margin-bottom:20px;}
     .About > .container > .img_box > img{width:100%;height:35vh;object-fit:cover;}
     .About > .container > .info_box{width:100%;padding:15px;}
@@ -88,10 +91,10 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
 }
 
 @media(max-width:480px){
-    body{font-size:14px;}
+    html{font-size:14px;}
     section{max-width:80vw;}
     /*nav ul .dayNight{position:absolute;bottom:40px;right:40px;}*/
-    .container > div > .text_box{line-height:12vw;font-size:11vw;margin-top:30px;}
+    .Home > .container > div > .text_box{line-height:12vw;font-size:11vw;margin-top:30px;}
     .About > .container > .img_box{width:100%;height:30vh;}
     .About > .container > .img_box > img{height:30vh;object-fit:cover;object-position:bottom;}
     .About > .container > .info_box{width:100%;padding:15px;}
