@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/main_page/static/css/main.328184bf.css",
+    "main.js": "/main_page/static/js/main.d001840b.js",
+    "static/media/KakaoTalk_Photo_2023-10-04-14-29-41.png": "/main_page/static/media/KakaoTalk_Photo_2023-10-04-14-29-41.b31b0ebca7facc1bde3e.png",
+    "index.html": "/main_page/index.html",
+    "main.328184bf.css.map": "/main_page/static/css/main.328184bf.css.map",
+    "main.d001840b.js.map": "/main_page/static/js/main.d001840b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.328184bf.css",
+    "static/js/main.d001840b.js"
+  ]
+}
