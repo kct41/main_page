@@ -98,6 +98,7 @@ section{border:1px solid blue;display:flex;align-items:center;justify-content:ce
     .About > .container > .img_box{width:100%;height:30vh;}
     .About > .container > .img_box > img{height:30vh;object-fit:cover;object-position:bottom;}
     .About > .container > .info_box{width:100%;padding:15px;}
+    .About > .container > .info_box > table{margin-bottom:20px;}
     .About > .container > .info_box > table > tbody > tr > th{width:25%;}
     .About > .container > .info_box > .skill_box > .box > .circle::before{inset:7px;}
 

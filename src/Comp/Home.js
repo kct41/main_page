@@ -1,8 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Typed from 'typed.js';
 import img from '../img/KakaoTalk_Photo_2023-10-04-14-29-41.png';
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
 
 function Home() {
+
+useEffect(() => {
+    AOS.init();
+}, []);
 
     const el = React.useRef(null);
     React.useEffect(() => {
@@ -22,7 +29,7 @@ function Home() {
     return (
         <section className="Home">
             <div className="container">
-                <div>
+                <div data-aos="fade-in" data-aos-duration="2000">
                     <div className="img_circle">
                         <img className="i1" alt="img" src={img}/>
                     </div>
