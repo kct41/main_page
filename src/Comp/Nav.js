@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import React from "react";
 
 function Nav() {
@@ -13,9 +13,9 @@ function Nav() {
     return (
         <nav className="Nav">
             <ul>
-                <li><Link to="/">HOME</Link></li>
-                <li><Link to="/about">ABOUT ME</Link></li>
-                <li><Link to="/portfolio">PORTFOLIO</Link></li>
+                <li><NavLink to="/" style={({ isActive }) => ({color : isActive ? '#6BB8BC' : ''})}>HOME</NavLink></li>
+                <li><NavLink to="/about" style={({ isActive }) => ({color : isActive ? '#6BB8BC' : ''})}>ABOUT ME</NavLink></li>
+                <li><NavLink to="/portfolio" style={({ isActive }) => ({color : isActive ? '#6BB8BC' : ''})}>PORTFOLIO</NavLink></li>
                 <li className="dayNight" onClick={night}>
                     <FontAwesomeIcon className="icon" icon={faMoon}/>
                     <FontAwesomeIcon className="icon" icon={faSun}/>
