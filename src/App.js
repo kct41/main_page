@@ -4,8 +4,18 @@ import {Routes, Route, HashRouter} from "react-router-dom";
 import Home from "./Comp/Home";
 import Portfolio from "./Comp/Portfolio";
 import About from "./Comp/About";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import {useEffect} from "react";
+
 
 function App() {
+
+    //AOS
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div className="App">
             <HashRouter>

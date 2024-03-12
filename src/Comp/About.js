@@ -4,7 +4,7 @@ function About(){
     return(
         <section className="About">
             <div className="container">
-                <div className="img_box">
+                <div className="img_box" data-aos="fade-in" data-aos-duration="2300">
                     <img alt="profile_image" src={img}/>
                 </div>
                 <div className="info_box">
@@ -21,11 +21,12 @@ function About(){
                         </tr>
                         <tr>
                             <th>학력</th>
-                            <td>서울여자대학교 중어중문학과 졸업&nbsp; | &nbsp;2015.03-2021.08</td>
+                            <td>서울여자대학교 중어중문학과 졸업&nbsp; | &nbsp;2021.08</td>
                         </tr>
                         <tr>
                             <th>기타자격</th>
-                            <td>웹디자인 기능사 취득&nbsp; | &nbsp;2021.10</td>
+                            <td>그린컴퓨터아카데미 웹디자인/퍼블리싱 수료&nbsp; | &nbsp;2021.08<br/>
+                                웹디자인 기능사 취득&nbsp; | &nbsp;2021.10</td>
                         </tr>
                         <tr>
                             <th>경력</th>

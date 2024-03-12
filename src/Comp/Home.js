@@ -1,15 +1,9 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Typed from 'typed.js';
 import img from '../img/KakaoTalk_Photo_2023-10-04-14-29-41.png';
-import AOS from "aos";
-import 'aos/dist/aos.css';
 
 
 function Home() {
-
-useEffect(() => {
-    AOS.init();
-}, []);
 
     const el = React.useRef(null);
     React.useEffect(() => {

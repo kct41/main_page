@@ -66,8 +66,14 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
 
 
 /*  Portfolio  */
-.Portfolio > .container{background-color:rgba(255,255,255,0.5);padding:50px;border-radius:20px;}
-.Portfolio > .container > div{width:45%;}
+.Portfolio > .container{background-color:rgba(255,255,255,0.5);box-shadow:1px 1px 3px rgba(0,0,0,0.1);padding:40px;border-radius:20px;}
+.Portfolio > .container > div{}
+.Portfolio > .container > .mockup{width:53%;.Portfolio > .container > div{border:1px solid red;}}
+.Portfolio > .container > .mockup > img{width:100%;}
+.Portfolio > .container > .info{width:43%;}
+.Portfolio > .container > .info > h2{color:#6BB8BC;font-size:1.8rem;}
+.Portfolio > .container > .info > .stack{width:100%;display:flex;margin-top:30px;}
+.Portfolio > .container > .info > .stack > span{border:1px solid #ddd;padding:3px 10px;line-height:18px;margin-right:5px;display:block;width:fit-content;border-radius:15px;background-color:#fff;color:#6BB8BC;font-weight:600;}
 
 
 /*  responsive  */
@@ -78,6 +84,10 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
     section{max-width:83vw;height:calc(100vh - 60px);}
     .Home > .container > div > .text_box{line-height:6.5vw;font-size:6vw;}
     .About > .container > .info_box > .skill_box > .box > .circle{position:relative;width:78px;height:78px;}
+    .Portfolio > .container{flex-direction:column;width:100%;}
+    /*  목업이미지 사이즈 맞추려면 여기 수정  */
+    .Portfolio > .container > .mockup{width:70%;}
+    .Portfolio > .container > .info{width:100%;}
 }
 
 @media(max-width:768px){
@@ -93,6 +103,8 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
     .About > .container > .img_box > img{width:100%;height:35vh;object-fit:cover;}
     .About > .container > .info_box{width:100%;padding:15px;}
     .About > .container > .info_box > .skill_box > .box > .circle{position:relative;width:60px;height:60px;}
+    .Portfolio > .container{padding:15px;}
+    .Portfolio > .container > .mockup{width:100%;}
 }
 
 @media(max-width:480px){
