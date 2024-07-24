@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/main_page/static/css/main.67dd9f4e.css",
-    "main.js": "/main_page/static/js/main.4d946d73.js",
-    "static/media/realistic_laptop_with_smartphone.jpg": "/main_page/static/media/realistic_laptop_with_smartphone.d741f89c1ed3700e0bf6.jpg",
+    "main.css": "/main_page/static/css/main.38c3caa5.css",
+    "main.js": "/main_page/static/js/main.4c5a183d.js",
+    "static/media/gwj_mockup1.png": "/main_page/static/media/gwj_mockup1.95f48062dd9f9441271e.png",
+    "static/media/minumsa_mockup1.png": "/main_page/static/media/minumsa_mockup1.3e6ad0360b96433391f9.png",
+    "static/media/nice_mockup1.png": "/main_page/static/media/nice_mockup1.3089dd5e50e677293e25.png",
     "static/media/KakaoTalk_20231010_191219995.jpg": "/main_page/static/media/KakaoTalk_20231010_191219995.e06934ab4f092f7a7f50.jpg",
     "static/media/KakaoTalk_Photo_2023-10-04-14-29-41.png": "/main_page/static/media/KakaoTalk_Photo_2023-10-04-14-29-41.b31b0ebca7facc1bde3e.png",
     "index.html": "/main_page/index.html",
-    "main.67dd9f4e.css.map": "/main_page/static/css/main.67dd9f4e.css.map",
-    "main.4d946d73.js.map": "/main_page/static/js/main.4d946d73.js.map"
+    "main.38c3caa5.css.map": "/main_page/static/css/main.38c3caa5.css.map",
+    "main.4c5a183d.js.map": "/main_page/static/js/main.4c5a183d.js.map"
   },
   "entrypoints": [
-    "static/css/main.67dd9f4e.css",
-    "static/js/main.4d946d73.js"
+    "static/css/main.38c3caa5.css",
+    "static/js/main.4c5a183d.js"
   ]
 }
