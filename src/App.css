@@ -6,7 +6,7 @@ body{font-family:'Noto Sans KR', sans-serif;letter-spacing:-1px;}
 a{color:inherit;text-decoration:none;}
 
 /**  App  **/
-.App{background-color:#eee;color:#393E46;width:100%;height:100vh;transition:.3s;}
+.App{background-color:#eee;color:#393E46;width:100%;height:100%;transition:.3s;}
 
 
 /**  App-night  **/
@@ -18,7 +18,7 @@ a{color:inherit;text-decoration:none;}
 
 
 /*  Nav  */
-nav{height:80px;width:100%;padding:0 50px;}
+nav{height:80px;width:100%;padding:0 50px;z-index:99;}
 nav ul{display:flex;justify-content:end;width:100%;height:100%;align-items:center;}
 nav ul li{font-size:1rem;margin-left:40px;font-weight:600;}
 nav ul li a{transition:.3s;}
@@ -32,7 +32,7 @@ nav ul .dayNight .icon:nth-child(2){display:none;}
 section{display:flex;align-items:center;justify-content:center;max-width:1000px;height:calc(100vh - 80px);margin:0 auto;}
 
 
-/*컨텐츠 화면 정가운데로 보내는*/
+/*컨텐츠 화면 정가운데로*/
 .container{display:flex;justify-content:space-between;align-items:center;width:100%;}
 
 
@@ -67,13 +67,19 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
 
 /*  Portfolio  */
 .Portfolio > .container{background-color:rgba(255,255,255,0.5);box-shadow:1px 1px 3px rgba(0,0,0,0.1);padding:40px;border-radius:20px;}
-.Portfolio > .container > div{}
-.Portfolio > .container > .mockup{width:53%;.Portfolio > .container > div{border:1px solid red;}}
+.Portfolio > .container > .mockup{width:48%;}
 .Portfolio > .container > .mockup > img{width:100%;}
-.Portfolio > .container > .info{width:43%;}
+.Portfolio > .container > .info{width:48%;}
 .Portfolio > .container > .info > h2{color:#6BB8BC;font-size:1.8rem;}
+.Portfolio > .container > .info > a{display:block;padding:5px 15px;border:2px solid transparent;transition:.3s;width:fit-content;border-radius:20px;font-size:.8rem;background-color:#6BB8BC;color:#fff;margin:10px 0;}
+.Portfolio > .container > .info > a:hover{background-color:#fff;color:#6BB8BC;border:2px solid #6BB8BC;transition:.3s;}
 .Portfolio > .container > .info > .stack{width:100%;display:flex;margin-top:30px;}
 .Portfolio > .container > .info > .stack > span{border:1px solid #ddd;padding:3px 10px;line-height:18px;margin-right:5px;display:block;width:fit-content;border-radius:15px;background-color:#fff;color:#6BB8BC;font-weight:600;}
+
+
+.mySwiper{width:100%;height:calc(100vh - 80px);}
+.swiper-pagination-bullet-active{background:#6BB8BC!important;}
+
 
 
 /*  responsive  */
@@ -88,10 +94,11 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
     /*  목업이미지 사이즈 맞추려면 여기 수정  */
     .Portfolio > .container > .mockup{width:70%;}
     .Portfolio > .container > .info{width:100%;}
+    .mySwiper{width:100%;height:calc(100vh - 60px);}
 }
 
-@media(max-width:768px){
-    html{font-size:15px;}
+@media(max-width:720px){
+    html{font-size:14px;}
     nav{height:60px;justify-content:center;}
     nav > ul{justify-content:center;}
     nav > ul > li:first-child{margin-left:0;}
@@ -109,7 +116,7 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
 
 @media(max-width:480px){
     html{font-size:14px;}
-    section{max-width:80vw;}
+    section{max-width:80vw;height:100vh;}
     nav{height:50px;position:absolute;bottom:0;left:0;padding:0 20px;background-color:rgba(255,255,255,0.5);border-radius:20px 20px 0 0;box-shadow:2px -1px 2px rgba(0,0,0,0.1);}
     nav ul .dayNight{transition:.3s;margin-left:35px;width:32px;height:32px;}
     /*nav ul .dayNight{position:absolute;bottom:40px;right:40px;}*/
@@ -120,4 +127,14 @@ section{display:flex;align-items:center;justify-content:center;max-width:1000px;
     .About > .container > .info_box > table{margin-bottom:20px;}
     .About > .container > .info_box > table > tbody > tr > th{width:25%;}
     .About > .container > .info_box > .skill_box > .box > .circle::before{inset:7px;}
+    .mySwiper{width:100%;height:100vh;}
 }
+
+
+/*.spark{position:absolute;width:40px;height:40px;transform:translate(0,-20px);}*/
+/*.spark span{position:absolute;width:2px;height:20px;pointer-events:none;transform-origin:bottom;overflow:hidden;filter:drop-shadow(0 0 20px #FF8F00) drop-shadow(0 0 40px #FF8F00);}*/
+/*.spark span::before{content:'';position:absolute;width:100%;height:100%;background:#FF8F00;animation:animate .6s ease-in forwards;}*/
+/*@keyframes animate {*/
+/*    0%{transform:translateY(100%);}*/
+/*    100%{transform:translateY(-100%);}*/
+/*}*/
