@@ -1,6 +1,6 @@
-import mockup_img1 from "../img/nice_mockup1.png";
-import mockup_img2 from "../img/minumsa_mockup1.png";
-import mockup_img3 from "../img/gwj_mockup1.png";
+import mockup_img1 from "../img/nice_mockup2.png";
+import mockup_img2 from "../img/minumsa_mockup2.png";
+import mockup_img3 from "../img/gwj_mockup2.png";
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 
