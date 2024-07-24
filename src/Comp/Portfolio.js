@@ -17,6 +17,7 @@ function Portfolio() {
                 slidesPerView={1}
                 spaceBetween={0}
                 mousewheel={true}
+                draggable={true}
                 pagination={{
                     clickable: true,
                 }}
